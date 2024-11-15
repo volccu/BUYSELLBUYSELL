@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Trading Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Poistettu otsikko -->
+    
+    <!-- Player Stats -moduuli vaakasuorassa ja käyräikkunan yläpuolella -->
+    <div id="stats">
+        <div class="stat-item">Money: $<span id="money">100</span></div>
+        <div class="stat-item">Stock Price: $<span id="stockPrice">5.00</span></div>
+        <div class="stat-item">Shares Owned: <span id="shares">0</span></div>
+    </div>
+
+    <!-- Käyräikkuna -->
+    <div id="chart-container">
+        <canvas id="chart" width="800" height="400"></canvas>
+    </div>
+
+    <!-- Shop -->
+    <div id="shop" class="card">
+        <button onclick="buyInsiderTrading()">Insider Trading ($1)</button>
+        <button onclick="buyMarketManipulation()">Market Manipulation ($1)</button>
+        <button onclick="buyTradingBot()">Buy Trading Bot ($50)</button>
+    </div>
+
+    <script src="scripts/chart.js"></script>
+    <script src="scripts/stock.js"></script>
+    <script src="scripts/shop.js"></script>
+</body>
+</html>

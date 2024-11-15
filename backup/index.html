@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUYSELLBUYSELL</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>BUYSELLBUYSELL</h1>
+    </header>
+
+    <section id="main-content">
+        <div id="stats">
+            <div class="card">
+                <h3>Player Stats</h3>
+                <p>Money: $<span id="money">100</span></p>
+                <p>Stock Price: $<span id="stockPrice">5.00</span></p>
+                <p>Shares Owned: <span id="shares">0</span></p>
+            </div>
+        </div>
+
+        <div id="chart-container">
+            <canvas id="chart" width="800" height="400"></canvas>
+        </div>
+
+        <div id="shop" class="card">
+            <h2>Shop</h2>
+            <button onclick="buyInsiderTrading()">Insider Trading (1$)</button>
+            <button onclick="buyMarketManipulation()">Market Manipulation (1$)</button>
+        </div>
+    </section>
+
+    <script src="scripts/chart.js"></script>
+    <script src="scripts/stock.js"></script>
+    <script src="scripts/shop.js"></script>
+</body>
+</html>
